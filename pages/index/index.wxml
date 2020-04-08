@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="title">Instructions: open the picture, drag your finger to the place where you need to Mosaic, save it and then click the upper right corner to share it with your friends.</view>
+  <view class="body">
+    <button bindtap="click" size="mini">open</button>
+    <button bindtap="cover" size="mini">mosaic</button>
+    <button size="mini" bindtap="clear">remove</button>
+    <button bindtap="save" size="mini">save</button>
+    <view>{{url}}</view>
+  </view>
+  <canvas class="canvas" canvas-id="myCanvas" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" disable-scroll="true">
+  </canvas>
+</view>
